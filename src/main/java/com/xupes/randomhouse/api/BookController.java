@@ -17,8 +17,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class BookController
 {
-    @Autowired
+
     private BookService bookService;
+
+    @Autowired
+    public BookController(BookService bookService) {
+        this.bookService = bookService;
+    }
 
     @GetMapping("/book/{isbn}")
     public Book getBook(@PathVariable String isbn)

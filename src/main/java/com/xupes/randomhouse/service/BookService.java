@@ -14,11 +14,19 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class BookService
 {
-    @Autowired
+
     private RestTemplate restTemplate;
+
+    @Autowired
+    public BookService(RestTemplate restTemplate)
+    {
+        this.restTemplate = restTemplate;
+    }
+
     public ResponseEntity<Book> get(@NonNull final String isbn)
     {
-        final String randomHouseURL = "https://reststop.randomhouse.com/resources/titles/";
+        final String randomHouseURL
+                = "https://reststop.randomhouse.com/resources/titles/";
         String resourceURL = randomHouseURL + isbn;
 
         try
