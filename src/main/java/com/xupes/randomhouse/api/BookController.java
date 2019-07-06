@@ -20,10 +20,10 @@ public class BookController
     @Autowired
     private BookService bookService;
 
-    @GetMapping("/book/{titles}")
-    public Book getBook(@PathVariable String titles)
+    @GetMapping("/book/{isbn}")
+    public Book getBook(@PathVariable String isbn)
     {
-        ResponseEntity<Book> response = bookService.get(titles);
+        ResponseEntity<Book> response = bookService.get(isbn);
 
         if (response != null)
         {

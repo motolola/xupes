@@ -16,10 +16,10 @@ public class BookService
 {
     @Autowired
     private RestTemplate restTemplate;
-    public ResponseEntity<Book> get(@NonNull final String titles)
+    public ResponseEntity<Book> get(@NonNull final String isbn)
     {
         final String randomHouseURL = "https://reststop.randomhouse.com/resources/titles/";
-        String resourceURL = randomHouseURL + titles;
+        String resourceURL = randomHouseURL + isbn;
 
         try
         {
