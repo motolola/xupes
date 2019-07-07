@@ -22,9 +22,15 @@ import static org.mockito.ArgumentMatchers.anyString;
 @RunWith(SpringRunner.class)
 public class BookServiceTest
 {
+    /**
+     * RestTemplate Mock.
+     */
     @Mock
     private RestTemplate restTemplate;
 
+    /**
+     * Injecting the Mocked Objects into the class under test.
+     */
     @InjectMocks
     private BookService bookService;
 

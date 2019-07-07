@@ -12,19 +12,33 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Created by Akinjide Motolola.
  * email: motolola@icloud.com
+ * A controller to create an endpoint for
+ * the system.
  */
 @RestController
 @RequestMapping("/api")
 public class BookController
 {
 
+    /**
+     * BookService.
+     */
     private BookService bookService;
 
+    /**
+     * Constructor Autowire of BookService.
+     * @param bookService bookService.
+     */
     @Autowired
     public BookController(BookService bookService) {
         this.bookService = bookService;
     }
 
+    /**
+     * Endpoint to display book details.
+     * @param isbn isbn.
+     * @return Book book.
+     */
     @GetMapping("/book/{isbn}")
     public Book getBook(@PathVariable String isbn)
     {

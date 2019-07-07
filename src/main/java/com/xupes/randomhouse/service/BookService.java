@@ -14,15 +14,23 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class BookService
 {
-
     private RestTemplate restTemplate;
 
+    /**
+     * Constructor Autowired RestTemplate.
+     * @param restTemplate restTemplate.
+     */
     @Autowired
-    public BookService(RestTemplate restTemplate)
+    public BookService(@NonNull final RestTemplate restTemplate)
     {
         this.restTemplate = restTemplate;
     }
 
+    /**
+     * This makes calls to the external server to get book details.
+     * @param isbn isbn
+     * @return ResponseEntity<Book>
+     */
     public ResponseEntity<Book> get(@NonNull final String isbn)
     {
         final String randomHouseURL
