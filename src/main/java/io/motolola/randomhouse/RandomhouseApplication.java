@@ -1,13 +1,11 @@
-package com.xupes.randomhouse;
+package io.motolola.randomhouse;
 
-import com.xupes.randomhouse.xupeAipClient.Client;
+import io.motolola.randomhouse.xupeAipClient.Client;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
-
-import java.util.Date;
 
 @SpringBootApplication
 public class RandomhouseApplication

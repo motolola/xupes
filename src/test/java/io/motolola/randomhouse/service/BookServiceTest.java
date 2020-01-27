@@ -1,6 +1,6 @@
-package com.xupes.randomhouse.service;
+package io.motolola.randomhouse.service;
 
-import com.xupes.randomhouse.pojo.Book;
+import io.motolola.randomhouse.pojo.Book;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

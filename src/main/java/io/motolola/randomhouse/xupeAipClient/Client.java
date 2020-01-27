@@ -1,4 +1,4 @@
-package com.xupes.randomhouse.xupeAipClient;
+package io.motolola.randomhouse.xupeAipClient;
 
 
 import org.springframework.http.*;

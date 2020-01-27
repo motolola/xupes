@@ -1,6 +1,6 @@
-package com.xupes.randomhouse.service;
+package io.motolola.randomhouse.service;
 
-import com.xupes.randomhouse.pojo.Book;
+import io.motolola.randomhouse.pojo.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.lang.NonNull;

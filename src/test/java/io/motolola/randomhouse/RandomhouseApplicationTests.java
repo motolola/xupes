@@ -1,4 +1,4 @@
-package com.xupes.randomhouse;
+package io.motolola.randomhouse;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
