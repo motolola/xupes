@@ -1,5 +1,6 @@
 package io.motolola.randomhouse;
 
+import io.motolola.randomhouse.random.FizzBuzz;
 import io.motolola.randomhouse.xupeAipClient.Client;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,10 +14,11 @@ public class RandomhouseApplication
 	public static void main(String[] args)
 	{
 		SpringApplication.run(RandomhouseApplication.class, args);
-		System.out.println(Client.getToken());
+		//System.out.println(Client.getToken());
+		FizzBuzz.fizzBuzz();
 	}
 
-	@Scheduled(initialDelay = 1000L, fixedDelay = 500L)
+	//@Scheduled(initialDelay = 1000L, fixedDelay = 500L)
 	public void testing()
 	{
 		//System.out.println(new Date());
