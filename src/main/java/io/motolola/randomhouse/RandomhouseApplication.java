@@ -18,10 +18,10 @@ public class RandomhouseApplication
 		FizzBuzz.fizzBuzz();
 	}
 
-	//@Scheduled(initialDelay = 1000L, fixedDelay = 500L)
+	@Scheduled(initialDelay = 1000L, fixedDelay = 500L)
 	public void testing()
 	{
-		//System.out.println(new Date());
+		System.out.println(new Date());
 	}
 
 	@Configuration
